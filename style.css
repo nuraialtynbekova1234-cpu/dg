@@ -1,0 +1,104 @@
+/* ---- :hover, :active, :focus ---- */
+
+.btn {
+  padding: 10px 20px;
+  background: #e0e0ff;
+  border: 2px solid #5a5ad4;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #b7b7ff;
+}
+
+.btn:active {
+  background: #7d7dff;
+  color: white;
+}
+
+.input {
+  padding: 8px;
+  border: 2px solid #999;
+}
+
+.input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* ---- link / visited ---- */
+
+.mylink:link {
+  color: blue;
+}
+
+.mylink:visited {
+  color: purple;
+}
+
+/* ---- before / after ---- */
+
+.before-after {
+  position: relative;
+  padding: 10px;
+  border: 2px dashed #444;
+}
+
+.before-after::before {
+  content: "→ ";
+  color: red;
+  font-weight: bold;
+}
+
+.before-after::after {
+  content: " ←";
+  color: green;
+  font-weight: bold;
+}
+
+/* ---- first-child / last-child ---- */
+
+.child-list li:first-child {
+  color: red;
+  font-weight: bold;
+}
+
+.child-list li:last-child {
+  color: blue;
+  font-weight: bold;
+}
+
+/* ---- nth-child ---- */
+
+.nth-list li:nth-child(odd) {
+  background: #ffe7e7;
+}
+
+.nth-list li:nth-child(even) {
+  background: #e7ffe7;
+}
+
+.nth-list li:nth-child(3) {
+  font-weight: bold;
+  color: #d10000;
+}
+
+/* ---- list-style ---- */
+
+.styled-list {
+  list-style: circle;
+  color: red;
+}
+
+/* ---- cursor + outline ---- */
+
+.cursor-btn {
+  padding: 10px 15px;
+  background: #fff4c9;
+  border: 2px solid #caa430;
+  cursor: pointer;
+}
+
+.cursor-btn:hover {
+  outline: 3px solid orange;
+}
